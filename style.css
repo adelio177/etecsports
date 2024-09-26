@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --azul: #1a1af7;
+    --amarelo: #e1cc06;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #c1c1c1;
+    --cinzaclaro: #dcdcdc;
+    --azulclaro: #b0c4de;
+    --verdemedio: #3cb371;
+    --verdeescuro: #006400;
+
+    --futebol: #003366;
+    --futebol1: #0040ff;
+    --fontefutebol: #ffffff;
+
+    --natacao: #28a745;
+    --natacao1: #008000;
+    --fontenatacao: #ffffff;
+
+    --volei: #D2691E;
+    --volei1: #A0522D;
+    --fontevolei: #ffffff;
+
+
+    --basquete: #9370DB;
+    --basquete1: #8B008B;
+    --fontebasquete: #ffffff;
+
+    --atletismo: #1E90FF;
+    --atletismo1: #0000ff;
+    --fonteatletismo: #ffffff;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    height: 10vh;
+}
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+#logo i {
+    font-size: 40px;
+}
+
+#logo p {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+
+#navegacao nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 5px;
+    gap: 10px;
+
+
+}
+
+.link-navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-navegacao a,
+.link-navegacao i {
+    transition: color o.3s ease, transform 0.3s ease;
+
+}
+
+.link-navegacao:hover a,
+.link-navegacao:hover i {
+    color: #ffcc00;
+
+}
+
+
+
+.link-navegacao i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.link-navegacao a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+
+
+#redessociais nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 20px;
+    gap: 7px;
+    padding: 10px;
+}
+
+.link-redessociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-redessociais a,
+.link-redessociais i {
+    transition: color o.3s ease, transform 0.3s ease;
+}
+
+.link-redessociais:hover a,
+.link-redessociais:hover i {
+    color: #ffcc00;
+}
+
+
+.link-redessociais i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.link-redessociais a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+#contato nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+
+.link-contato a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-contato p,
+.link-contato i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-contato:hover p,
+.link-contato:hover i {
+    color: #ffcc00;
+}
+
+
+.link-contato i {
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+
+.link-contato a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+
+}
+
+
+#entrar {
+    margin-right: 30px;
+    background-color: #000000;
+}
+
+#entrar {
+    margin-right: 30px;
+}
+
+#botao-entrar {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600px;
+    background-color: #000000;
+    border-color: #ffffff;
+    border: 3px solid-transparent;
+    border-radius: 5px;
+    transition: all 2s ease;
+}
+
+#botao-entrar:hover {
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid var(--preto);
+    padding-bottom: 30px;
+}
+
+#apresentacao h1 {
+    align-items: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px var(--cinza);
+    margin-bottom: 40px;
+}
+
+#conteudo {
+    display: flex;
+    flex: row;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+#imagem img {
+    width: 350px;
+    margin-left: 100px;
+    transition: all 1s ease;
+
+}
+
+#imagem img:hover {
+    scale: 1.3;
+    transform: translateY(-20px);
+    transform: translateX(-20px);
+    filter: saturate(2);
+}
+
+
+#texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    padding: 20px 30px 20px 30px;
+}
+
+.cards:hover {
+    background-color: var(--cinzaclaro);
+}
+
+.cards h2 {
+    font-size: 0px;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 5px var(--cinza);
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.card {
+    border: 3px solid var(--preto);
+    box-shadow: 5px 5px 5px var(--cinza);
+    width: 15%;
+    height: 500px;
+    opacity: 0.3;
+    background-color: var(--branco);
+    transition: all 1s ease;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card img:hover {
+    filter: saturate(2);
+}
+
+.card-info {
+    margin: 20px 10px 10px 10px;
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.card p {
+    height: 100px;
+    font-size: 14px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    ;
+}
+
+.card-button button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--branco);
+    border: 2px solid var(--preto);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card-button button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.modalidade {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 4px solid var(--preto);
+}
+
+.modalidade-imagem {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.modalidade-imagem img {
+    height: 65%;
+}
+
+.modalidade-imagem img:hover {
+    filter: saturate(1.3);
+}
+
+.modalidade-texto {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.modalidade-texto h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px var(--preto);
+    font-family: "open+sans, sans-serif"
+}
+
+.modalidade-texto h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.modalidade-texto p {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    margin-left: 50px;
+    height: 150px;
+}
+
+.modalidade-texto ol {
+    margin-left: 70px;
+    height: 200px
+}
+
+.modalidade-texto ol li {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.modalidade-texto ol li span {
+    font-weight: 700;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.modalidade-texto button {
+    margin: 40px 0 50px 100px;
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+#futebol {
+    background: linear-gradient(to right, var(--futebol), var(--futebol1));
+    color: var(--fontefutebol);
+    transform: all 2s ease;
+}
+
+#futebol-botao-teste {
+    background-color: var(--futebol);
+    color: var(--fontefutebol);
+    border: 2px solid var(--fontefutebol);
+    transition: all 1s ease;
+}
+
+#futebol-botao-teste:hover {
+    background-color: var(--fontefutebol);
+    color: var(--futebol);
+
+}
+
+#natacao {
+    background: linear-gradient(to right, var(--natacao), var(--natacao1));
+    color: var(--fontenatacao);
+    transform: all 2s ease;
+}
+
+#natacao-botao-teste {
+    background-color: var(--natacao);
+    color: var(--fontenatacao);
+    border: 2px solid var(--fontenatacao);
+    transition: all 1s ease;
+}
+
+#natacao-botao-teste:hover {
+    background-color: var(--fontenatacao);
+    color: var(--natacao);
+}
+
+#volei {
+    background: linear-gradient(to right, var(--volei), var(--volei1));
+    color: var(--fontevolei);
+    transform: all 2s ease;
+}
+
+#volei-botao-teste {
+    background-color: var(--volei);
+    color: var(--fontevolei);
+    border: 2px solid var(--fontevolei);
+    transition: all 1s ease;
+}
+
+#volei-botao-teste:hover {
+    background-color: var(--fontevolei);
+    color: var(--volei);
+}
+
+#basquete {
+    background: linear-gradient(to right, var(--basquete), var(--basquete1));
+    color: var(--fontebasquete);
+    transform: all 2s ease;
+}
+
+#basquete-botao-teste {
+    background-color: var(--basquete);
+    color: var(--fontebasquete);
+    border: 2px solid var(--fontebasquete);
+    transition: all 1s ease;
+}
+
+#basquete-botao-teste:hover {
+    background-color: var(--fontebasquete);
+    color: var(--basquete);
+}
+
+#atletismo {
+    background: linear-gradient(to right, var(--atletismo), var(--atletismo1));
+    color: var(--fonteatletismo);
+    transform: all 2s ease;
+}
+
+#atletismo-botao-teste {
+    background-color: var(--atletismo);
+    color: var(--fonteatletismo);
+    border: 2px solid var(--fonteatletismo);
+    transition: all 1s ease;
+}
+
+#atletismo-botao-teste:hover {
+    background-color: var(--fonteatletismo);
+    color: var(--atletismo);
+}
+
+
+footer {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.legenda {
+    font-size: 12px;
+    color: var(--branco);
+    border-bottom: 1px solid var(--branco);
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--branco);
+    margin-bottom: 14px;
+}
+
+
+#redessociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#redessociais p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redessociais-link {
+    display: flex;
+    flex-direction: row;
+    color: var(--branco);
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.redessociais-link:hover {
+    font-weight: 800;
+
+}
+
+.redessociais-link i {
+    font-size: 34px;
+
+}
+
+.texto-link {
+    font-size: 20px;
+
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#contato p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-link {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contato-link:hover {
+    font-weight: 800;
+
+}
+
+.contato-link i {
+    font-size: 46px;
+}
+
+.texto-contato {
+    font-size: 24px;
+}
