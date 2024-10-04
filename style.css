@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/*----------Variáveis----------*/
+
+
 :root {
     --azul: #1a1af7;
     --amarelo: #e1cc06;
@@ -12,6 +16,7 @@
     --azulclaro: #b0c4de;
     --verdemedio: #3cb371;
     --verdeescuro: #006400;
+    --chumbo: #696969;
 
     --futebol: #003366;
     --futebol1: #0040ff;
@@ -48,6 +53,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/*----------Header----------*/
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -57,6 +67,8 @@ header {
     height: 10vh;
 }
 
+
+/*-----Logo-----*/
 
 #logo {
     display: flex;
@@ -77,7 +89,7 @@ header {
     font-weight: 800;
 }
 
-
+/*-----Navegação-----*/
 
 #navegacao nav {
     display: flex;
@@ -115,7 +127,6 @@ header {
 }
 
 
-
 .link-navegacao i {
     color: #ffffff;
     font-size: 24px;
@@ -127,7 +138,7 @@ header {
     color: #ffffff;
 }
 
-
+/*-----Redes Sociais-----*/
 
 #redessociais nav {
     display: flex;
@@ -173,6 +184,12 @@ header {
     font-size: 10px;
     color: #ffffff;
 }
+
+
+
+/*-----Contato-----*/
+
+
 
 #contato nav {
     display: flex;
@@ -222,6 +239,8 @@ header {
 
 }
 
+/*-----Botão Entrar-----*/
+
 
 #entrar {
     margin-right: 30px;
@@ -251,6 +270,14 @@ header {
 
 }
 
+
+/*----------Main----------*/
+
+
+/*-----Apresentação-----*/
+
+
+
 #apresentacao {
     display: flex;
     flex-direction: column;
@@ -269,6 +296,10 @@ header {
     margin-bottom: 40px;
 }
 
+
+/*-----Conteúdo-----*/
+
+
 #conteudo {
     display: flex;
     flex: row;
@@ -276,6 +307,10 @@ header {
     margin-right: 100px;
 
 }
+
+
+/*-----Imagem Conteúdo-----*/
+
 
 #imagem img {
     width: 350px;
@@ -292,11 +327,19 @@ header {
 }
 
 
+/*-----Texto Apresentação-----*/
+
+
 #texto p {
     font-size: 18px;
     margin-bottom: 20px;
     margin-right: 5px;
 }
+
+
+/*-----Cards-----*/
+
+
 
 .cards {
     display: flex;
@@ -392,6 +435,11 @@ header {
     color: var(--branco);
 }
 
+
+/*-----Modalidade-----*/
+
+
+
 .modalidade {
     display: flex;
     flex-direction: row;
@@ -451,13 +499,13 @@ header {
     padding-bottom: 10px;
 }
 
-.modalidade-texto ol li span {
+.modalidade-texto ol li spam {
     font-weight: 700;
     text-shadow: 2px 2px 2px var(--preto);
 }
 
 .modalidade-texto button {
-    margin: 40px 0 50px 100px;
+    margin: 40px 50px 100px;
     width: 100%;
     height: 50px;
     font-size: 26px;
@@ -465,6 +513,10 @@ header {
     cursor: pointer;
     transition: all 1s ease;
 }
+
+
+/*-----Futebol-----*/
+
 
 #futebol {
     background: linear-gradient(to right, var(--futebol), var(--futebol1));
@@ -485,6 +537,10 @@ header {
 
 }
 
+
+/*-----Natação-----*/
+
+
 #natacao {
     background: linear-gradient(to right, var(--natacao), var(--natacao1));
     color: var(--fontenatacao);
@@ -502,6 +558,10 @@ header {
     background-color: var(--fontenatacao);
     color: var(--natacao);
 }
+
+
+/*-----Volei-----*/
+
 
 #volei {
     background: linear-gradient(to right, var(--volei), var(--volei1));
@@ -521,6 +581,10 @@ header {
     color: var(--volei);
 }
 
+
+/*-----Basquete-----*/
+
+
 #basquete {
     background: linear-gradient(to right, var(--basquete), var(--basquete1));
     color: var(--fontebasquete);
@@ -538,6 +602,10 @@ header {
     background-color: var(--fontebasquete);
     color: var(--basquete);
 }
+
+
+/*-----Atletismo-----*/
+
 
 #atletismo {
     background: linear-gradient(to right, var(--atletismo), var(--atletismo1));
@@ -558,6 +626,70 @@ header {
 }
 
 
+/*-----Comparação-----*/
+
+
+
+#comparacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--branco);
+    color: var(--preto);
+
+}
+
+#comparacao h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px var(--cinza);
+}
+
+#comparacao table {
+    width: 70%;
+    border-collapse: collapse;
+
+}
+
+#comparacao th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#comparacao th {
+    background-color: var(--chumbo);
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#comparacao tbody tr {
+    background-color: var(--branco);
+    transition: all 0.5s ease;
+
+}
+
+#comparacao tbody tr:hover {
+    background-color: var(--cinza);
+
+}
+
+.nome-modalidade-tabela {
+    text-align: center;
+    font-weight: 800;
+}
+
+.esforco-modalidade-tabela {
+    text-align: center;
+    font-style: italic;
+}
+
+/*----------Footer----------*/
+
+
 footer {
     height: 50vh;
     display: flex;
@@ -569,6 +701,8 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+/*-----Dados desenvolvedor-----*/
 
 #desenvolvedor {
     display: flex;
@@ -588,6 +722,10 @@ footer {
     color: var(--branco);
     margin-bottom: 14px;
 }
+
+
+/*-----Redes Sociais-----*/
+
 
 
 #redessociais {
@@ -626,6 +764,11 @@ footer {
     font-size: 20px;
 
 }
+
+
+/*-----Contato-----*/
+
+
 
 #contato {
     display: flex;
